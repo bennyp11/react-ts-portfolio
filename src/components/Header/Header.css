@@ -1,0 +1,26 @@
+.link-container {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    border: 4px solid red;
+    margin-left: 200px;
+    width: 70vw;
+    margin-right: 20px;
+}
+
+.logo-container {
+    display: flex;
+    text-align: left;
+    margin-left: 20px;
+    border: 4px solid green;
+    width: 30vw;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row;
+    border: 7px solid yellow;
+    justify-content: center;
+    align-items: center;
+    height: 7vh;
+}

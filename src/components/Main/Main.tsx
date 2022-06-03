@@ -1,5 +1,11 @@
+import LiveBackground from '../Particles/Particles';
+import { LandingPage } from '../LandingPage/LandingPage';
+
 export default function Main() {
     return(
-    <div><h2>MAIN</h2></div>
+    <>
+    <LiveBackground />
+    <LandingPage />
+    </>
     );
 }
