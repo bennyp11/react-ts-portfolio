@@ -1,6 +1,7 @@
 import { BrowserRouter as Router } from 'react-router-dom';
 import { NavHashLink, HashLink } from 'react-router-hash-link';
 import { useState } from 'react';
+import Resume from '../../assets/bp-resume.pdf';
 import './Header.css';
 
 export default function Header() {
@@ -9,25 +10,26 @@ export default function Header() {
         <Router>
         <HashLink smooth to="#home" className="logo">
         <div className="logo-container">
-          <span>Benny</span>
-          <span> P</span>
+            <span className="stylized-benny">Benny</span>
+            <span className="stylized-p"> P</span>
         </div>
         </HashLink>
 
         <div className="link-container">
         <nav>
           <NavHashLink smooth to="#home" >
-            Home
+            <label>Home</label>
           </NavHashLink>
           <NavHashLink smooth to="#aboutme" >
-            About Me
+            <label>About Me</label>
           </NavHashLink>
           <NavHashLink smooth to="#projects" >
-            Projects
+            <label>Projects</label>
           </NavHashLink>
           <NavHashLink smooth to="#contactme" >
-            Contact Me
+            <label>Contact Me</label>
           </NavHashLink>
+            <button><a href={Resume} download>Resume</a></button>
         </nav>
         </div>
 
