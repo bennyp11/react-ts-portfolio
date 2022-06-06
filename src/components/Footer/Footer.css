@@ -1,0 +1,67 @@
+.footer-container {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height: 5vh;
+    margin: 0;
+    border: 5px solid green;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(255, 255, 255, .4);
+}
+
+.bottom-logo-container {
+    font-size: 1.8rem;
+    border: 6px solid red;
+    margin: auto;
+    margin-left: 3vw;
+}
+
+.stylized-p{
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    color: green;
+  }
+
+  .stylized-benny{
+    font-family: 'Anton', sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    color: pink;
+  }
+
+.kicker-container {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+
+img#react {
+    animation: spinning 5s infinite linear;
+    height: 2rem;
+    width: 2rem;
+}
+
+img#github {
+    margin-right: 3vw;
+    height: 2rem;
+    width: 2rem;
+
+}
+
+@keyframes spinning {
+    0%{
+      transform: rotate(0);
+    }
+    100%{
+      transform: rotate(360deg);
+    }
+  }
+
