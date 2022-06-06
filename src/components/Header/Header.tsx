@@ -1,7 +1,7 @@
+import Resume from "../../assets/bp-resume.pdf";
 import { BrowserRouter as Router } from 'react-router-dom';
 import { NavHashLink, HashLink } from 'react-router-hash-link';
 import { useState } from 'react';
-import Resume from '../../assets/bp-resume.pdf';
 import './Header.css';
 
 export default function Header() {
@@ -29,7 +29,7 @@ export default function Header() {
           <NavHashLink smooth to="#contactme" >
             <label>Contact Me</label>
           </NavHashLink>
-            <button><a href={Resume} download>Resume</a></button>
+            <button><a href="https://bennypollock-bucket.s3.us-west-1.amazonaws.com/Ben+Pollock+Resume.pdf" download>Resume</a></button>
         </nav>
         </div>
 
