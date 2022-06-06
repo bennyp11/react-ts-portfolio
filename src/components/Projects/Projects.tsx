@@ -2,6 +2,6 @@ import './Projects.css';
 
 export function Projects() {
     return (
-        <div className="projects"><p>PROJECTS</p></div>
+        <div className="projects" id="projects"><p>PROJECTS</p></div>
     );
 }

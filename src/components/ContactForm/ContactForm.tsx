@@ -21,7 +21,7 @@ interface IFormInput {
     job: yup.string().required().min(6).max(50)
   });
 
-export default function ContactForm() {
+function ContactForm() {
     const {
         register,
         handleSubmit,
@@ -37,7 +37,7 @@ const onSubmit = (data: IFormInput) => {
 };
   
   return (
-    <div className="contact-form-page">
+    <div className="contact-form-page" id="contactme">
     <form onSubmit={handleSubmit(onSubmit)} >
       <input type="text" placeholder="First name" {...register("firstName", {required: true, maxLength: 80})} />
       <input type="text" placeholder="Last name" {...register("lastName", {required: true, maxLength: 100})} />
@@ -49,3 +49,5 @@ const onSubmit = (data: IFormInput) => {
     </div>
   );
 }
+
+export default ContactForm;

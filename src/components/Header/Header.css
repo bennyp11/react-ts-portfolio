@@ -45,6 +45,10 @@ button:hover {
 }
 
 .header-container {
+    position: fixed;
+    top: 0;
+    margin: auto;
+    width: 100vw;
     display: flex;
     flex-direction: row;
     border: 7px solid yellow;
