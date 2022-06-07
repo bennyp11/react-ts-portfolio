@@ -3,7 +3,7 @@ import { LandingPage } from '../LandingPage/LandingPage';
 import  Bio  from '../Bio/Bio';
 import { Projects } from '../Projects/Projects';
 import { Calendly } from '../Calendly/Calendly';
-import ContactForm from '../ContactForm/ContactForm';
+import Form from '../Form/Form';
 
 export default function Main() {
     return(
@@ -13,7 +13,7 @@ export default function Main() {
     <Bio />
     <Projects />
     <Calendly />
-    <ContactForm />
+    <Form />
     </>
     );
 }
