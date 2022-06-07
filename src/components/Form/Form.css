@@ -1,0 +1,75 @@
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    padding-bottom: 10vh;
+    background: rgba(255,255,255,0.3);
+    width: 30vw;
+    height: 60vh;
+    border-radius: 8px;
+    margin-bottom: 5vh;
+}
+.email {
+    display: flex;
+    flex-direction: column;
+}
+
+.job {
+    display: flex;
+    flex-direction: column;
+}
+
+.feedback {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    text-align: center;
+    margin: auto;
+}
+
+textarea {
+    height: 22px;
+    width: 300px;
+}
+
+.feedback textarea {
+    height: 200px;
+}
+
+h1 {
+    color: white;
+}
+
+input {
+    margin-top: 2vh;
+}
+
+.rainbow {
+    text-align: center;
+    text-decoration: underline;
+    font-size: 32px;
+    font-family: monospace;
+    letter-spacing: 5px;
+}
+.rainbow_text_animated:hover {
+    background: linear-gradient(to right, #C0C0C0, #A9A9A9 , #929292, #A9A9A9, #C0C0C0);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    animation: rainbow_animation 6s ease-in-out infinite;
+    background-size: 400% 100%;
+}
+
+@keyframes rainbow_animation {
+    0%,100% {
+        background-position: 0 0;
+    }
+
+    50% {
+        background-position: 100% 0;
+    }
+}

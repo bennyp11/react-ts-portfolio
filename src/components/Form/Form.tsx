@@ -1,9 +1,10 @@
 import React from 'react';
+import './Form.css';
 
 export default class extends React.Component {
   constructor(props) {
 	super(props);
-	this.state = { feedback: '', name: 'Name', email: 'ben.r.pollock@gmail.com', job: ''};
+	this.state = { feedback: '', name: '', email: '', job: ''};
 	this.handleFeedbackChange = this.handleFeedbackChange.bind(this);
     this.handleEmailChange = this.handleEmailChange.bind(this);
     this.handleJobChange = this.handleJobChange.bind(this);
@@ -12,42 +13,42 @@ export default class extends React.Component {
 
   render() {
 	return (
-  	<form className="test-mailing">
-    	<h1>Let's get in touch</h1>
-        <div>
+  	<form className="form-container">
+    	<h1 className="rainbow_text_animated">Let's get in touch!</h1>
+        <div className="email">
+		<label>Email</label>
       	<textarea
-        	id="test-mailing"
-        	name="test-mailing"
+        	id="email"
+        	name="email"
         	onChange={this.handleEmailChange}
         	placeholder="your@email.com"
         	required
         	value={this.state.email}
-        	style={{width: '100%', height: '150px'}}
       	/>
     	</div>
-        <div>
+        <div className="job">
+		<label>Job Title</label>
       	<textarea
-        	id="test-mailing"
-        	name="test-mailing"
+        	id="job"
+        	name="job"
         	onChange={this.handleJobChange}
         	placeholder="Job Title"
         	required
         	value={this.state.job}
-        	style={{width: '100%', height: '150px'}}
       	/>
     	</div>
-        <div>
+        <div className="feedback">
+		<label>Message</label>
       	<textarea
-        	id="test-mailing"
-        	name="test-mailing"
+        	id="feedback"
+        	name="feedback"
         	onChange={this.handleFeedbackChange}
         	placeholder="Ben, your portfolio is sweet. We'd like to discuss a business opportunity with you!"
         	required
         	value={this.state.feedback}
-        	style={{width: '100%', height: '150px'}}
       	/>
     	</div>
-    	<input type="button" value="Submit" className="btn btn--submit" onClick={this.handleSubmit} />
+    	<input type="button" value="Send this message to Ben" className="btn btn--submit" onClick={this.handleSubmit} />
   	</form>
 	)
   }
