@@ -15,7 +15,7 @@ import "./Bio.css";
 
 function Bio() {
   return(
-    <div id="aboutme">
+    <div id="bio">
       <div className="about-text">
         <AnimationOnScroll animateIn="animate__fadeInLeftBig" style={{marginTop: "30vh"}}>
           <h2>About Ben</h2>

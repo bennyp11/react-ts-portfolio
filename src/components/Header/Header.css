@@ -116,5 +116,31 @@ button:hover {
     }
 }
 
+@media (max-width: 700px) {
+    label {
+        font-weight: normal;
+        font-size: 6px;
+        justify-content: center;
+    }
+
+    .link-container {
+        margin-top: 3vh;
+        margin-right: 100px;
+    }
+
+    button {
+        margin-right: 80px;
+    }
+
+    .stylized-benny {
+        margin-left: 3vw;
+        font-size: 1em;
+    }
+
+    .stylized-p {
+        font-size: 1em;
+    }
+}
+
 
 

@@ -16,7 +16,7 @@ export default class extends React.Component {
 	return (
   	<form id="contactme">
 	<AnimationOnScroll animateIn="animate__fadeIn">
-	<div className="project-header">
+	<div className="form-header">
 	<h3>Let's work together.</h3>
 	</div>
 	</AnimationOnScroll>
@@ -50,7 +50,9 @@ export default class extends React.Component {
         	id="feedback"
         	name="feedback"
         	onChange={this.handleFeedbackChange}
-        	placeholder="Ben, your portfolio is sweet. We'd like to discuss a business opportunity with you!"
+        	placeholder="Ben,
+Your portfolio is sweet. I'd like to discuss a business opportunity with you!
+Could you email me your availability for this week?"
         	required
         	value={this.state.feedback}
       	/>

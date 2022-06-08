@@ -19,14 +19,14 @@ export default function Header() {
           <NavHashLink smooth to="#home" >
             <label>Home</label>
           </NavHashLink>
-          <NavHashLink smooth to="#aboutme" >
-            <label>About Me</label>
+          <NavHashLink smooth to="#bio" >
+            <label>Bio</label>
           </NavHashLink>
           <NavHashLink smooth to="#projects" >
             <label>Projects</label>
           </NavHashLink>
-          <NavHashLink smooth to="#contactme" >
-            <label>Contact Me</label>
+          <NavHashLink smooth to="#contact" >
+            <label>Contact</label>
           </NavHashLink>
             <button><a href="https://bennypollock-bucket.s3.us-west-1.amazonaws.com/Ben+Pollock+Resume.pdf" download>Resume</a></button>
         </nav>

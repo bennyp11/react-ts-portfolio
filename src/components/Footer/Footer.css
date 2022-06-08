@@ -68,3 +68,12 @@ img#github:hover {
     }
   }
 
+
+  @media (max-width: 800px){
+    .footer-container {
+      height: 7vh;
+    }
+    .kicker-container {
+      font-size: 5px;
+    }
+  }
