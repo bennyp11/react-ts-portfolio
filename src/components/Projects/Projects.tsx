@@ -6,8 +6,13 @@ import './Projects.css';
 
 export function Projects() {
     return (
-        <div>
+        <div id="projects">
+        <AnimationOnScroll animateIn="animate__fadeIn">
+        <div className="project-header">
         <h3>What I've Built</h3>
+        </div>
+        </AnimationOnScroll>
+        <div className="projects">
         <AnimationOnScroll animateIn="animate__flipInX">
         <div className="project">
           <header>
@@ -20,7 +25,7 @@ export function Projects() {
           </header>
           <div className="body">
             <h3>SmartBrain</h3>
-            <p>Utilizes a 3rd party facial recognition API to identify and count human faces from uploaded photos. Has secure, end-to-end encryption for registration and login, through bcrypt. Uses strong password validation to prevent users from having bad extremely vulnerable passwords. 
+            <p>Utilizes a 3rd party facial recognition API to identify and count human faces from uploaded photos. Has secure, end-to-end encryption for registration and login, through bcrypt.
             </p>
           </div>
           <div className="project-footer">
@@ -29,7 +34,6 @@ export function Projects() {
               <li>NodeJS</li>
               <li>Postgres</li>
               <li>Heroku</li>
-              <li>Clarifai API</li>
             </ul>
           </div>
         </div>
@@ -224,6 +228,7 @@ export function Projects() {
             </div>
           </div>
         </AnimationOnScroll>
+        </div>
         </div>
     );
 }

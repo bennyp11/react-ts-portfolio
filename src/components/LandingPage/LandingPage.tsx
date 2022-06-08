@@ -3,7 +3,7 @@ import "./LandingPage.css";
 
 export function LandingPage(){
   return(
-    <div className="landing-page" id="home">
+    <div className="landing-page" >
           <img src={GifLogo} alt="logo" />
     </div>
   )

@@ -94,7 +94,7 @@ function LiveBackground(){
               "top": "out"
             },
             "random": true,
-            "speed": 1,
+            "speed": .11,
             "spin": {}
           },
           "number": {
@@ -122,8 +122,8 @@ function LiveBackground(){
               "enable": true
             },
             "value": {
-              "min": 1,
-              "max": 3
+              "min": .5,
+              "max": 1.5
             },
             "animation": {
               "speed": 4,

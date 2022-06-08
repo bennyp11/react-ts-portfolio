@@ -13,23 +13,20 @@
 
 .bottom-logo-container {
     font-size: 1.8rem;
-    border: 6px solid red;
     margin: auto;
-    margin-left: 3vw;
+    margin-left: 2.5vw;
 }
 
 .stylized-p{
     font-family: 'Anton', sans-serif;
-    font-style: italic;
     text-transform: uppercase;
-    color: green;
+    color: #ff16ce;
   }
 
   .stylized-benny{
     font-family: 'Anton', sans-serif;
-    font-style: italic;
     text-transform: uppercase;
-    color: pink;
+    color: #7ed967;
   }
 
 .kicker-container {
@@ -49,7 +46,7 @@ img#react {
 }
 
 img#github {
-    margin-right: 3vw;
+    margin-right: 4vw;
     height: 2.5rem;
     width: 2.5rem;
     background-color: white;

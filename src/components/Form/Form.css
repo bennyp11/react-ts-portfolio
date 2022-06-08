@@ -7,9 +7,9 @@
     padding-bottom: 10vh;
     background: rgba(255,255,255,0.3);
     width: 30vw;
-    height: 60vh;
+    height: 63vh;
     border-radius: 8px;
-    margin-bottom: 5vh;
+    margin-bottom: 20vh;
 }
 .email {
     display: flex;

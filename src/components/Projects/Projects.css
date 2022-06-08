@@ -1,32 +1,50 @@
 .projects {
-    height: 110vh;
+    margin-right: 4vw;
+    margin-left: 4vw;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    padding: 1rem;
+    overflow: hidden;
+    margin-bottom: 20vh;
+}
+
+.project-header{
+    bottom: 0;
     color: white;
-    border: 5px solid purple;
+    text-align: center;
+    background: black;
+    margin-top: 30vh;
+    margin-bottom: 30vh;
+    background-size: 100% 100%;
+    font-size: 8em;
+    margin-bottom: 0;
 }
 
 .project{
     padding: 2rem 1.8rem;
-    background-color: var(--brown-gray);
+    background: rgba(255,255,255,0.3);
     border-radius: 1.2rem;
     transition: 0.25s;
     display: flex;
     flex-direction: column;
     font-weight: bold;
-    height: 100%;
     color: #FFF;
+    width: 25vw;
+    height: 35vh;
+    margin-bottom: 20px;
 }
 
 .project:hover{
       transform: translateY(-5px);
-      background-color: var(--pink);
+      background-color: #16ff645d;
 }
 
 header{
       display: flex;
       align-items: center;
       justify-content: space-between;
-      color: var(--pink);
-      margin-bottom: 3.6rem;
+      color: #ff16ce;
 }
 .project-links{
         display: flex;
@@ -40,6 +58,7 @@ header{
     
     
     .project h3{
+        margin-top: 0;
       margin-bottom: 2rem;
     }
 
@@ -50,7 +69,6 @@ header{
     }
     a{
         color: #FFFF;
-        border-bottom: 1px solid var(--green);
         transition: color 0.25s;
 
       }
@@ -66,6 +84,6 @@ header{
         display: flex;
         align-items: center;
         gap: 2rem;
-        font-size: 1.4rem;
+        font-size: 1.4vh;
         opacity: 0.6;
       }

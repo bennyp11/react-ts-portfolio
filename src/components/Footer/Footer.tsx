@@ -11,7 +11,7 @@ export default function Footer() {
         <HashLink smooth to="#home" className="logo">
         <div className="bottom-logo-container">
             <span className="stylized-benny">Benny</span>
-            <span className="stylized-p"> P</span>
+            <span className="stylized-p">P</span>
         </div>
         </HashLink>
 

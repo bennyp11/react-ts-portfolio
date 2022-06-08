@@ -13,7 +13,7 @@ export default class extends React.Component {
 
   render() {
 	return (
-  	<form className="form-container">
+  	<form className="form-container" id="contactme">
     	<h1 className="rainbow_text_animated">Let's get in touch!</h1>
         <div className="email">
 		<label>Email</label>
