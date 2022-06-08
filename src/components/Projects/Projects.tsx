@@ -9,7 +9,7 @@ export function Projects() {
         <div id="projects">
         <AnimationOnScroll animateIn="animate__fadeIn">
         <div className="project-header">
-        <h3>What I've Built</h3>
+        <h3>What I've Built.</h3>
         </div>
         </AnimationOnScroll>
         <div className="projects">
@@ -25,15 +25,12 @@ export function Projects() {
           </header>
           <div className="body">
             <h3>SmartBrain</h3>
-            <p>Utilizes a 3rd party facial recognition API to identify and count human faces from uploaded photos. Has secure, end-to-end encryption for registration and login, through bcrypt.
+            <p>Counts human faces in uploaded photos. Has secure, end-to-end encryption for registration and login, through bcrypt.
             </p>
           </div>
           <div className="project-footer">
             <ul className="tech-list">
-              <li>ReactJS</li>
-              <li>NodeJS</li>
-              <li>Postgres</li>
-              <li>Heroku</li>
+              <li>{'{'}ReactJS{'}'} {'{'}NodeJS{'}'} {'{'}Postgres{'}'} {'{'}Heroku{'}'} {'{'}Clarifai{'}'}</li>
             </ul>
           </div>
         </div>
@@ -52,17 +49,13 @@ export function Projects() {
             </div>
             </header>
             <div className="body">
-              <h3>Sendmo / Requestmo</h3>
-              <p>A simple application that generates a QR link integrated into Venmo payments. By scanning the QR, a Venmo transaction will be automatically generated. Enables merchants to do QR based sales.
+              <h3>Sendmo</h3>
+              <p>Generate custom QR for Venmo payments. Simply scan the QR to generate a Venmo payment. Enables merchants to do QR based sales.
               </p>
             </div>
             <div className="project-footer">
               <ul className="tech-list">
-                <li>React</li>
-                <li>Forms</li>
-                <li>Typescript</li>
-                <li>Payments</li>
-                <li>gCloud</li>
+              <li>{'{'}JavaScript{'}'} {'{'}JQuery{'}'} {'{'}CSS{'}'} {'{'}gCloud{'}'} {'{'}Payments{'}'}</li>
               </ul>
             </div>
           </div>
@@ -79,15 +72,12 @@ export function Projects() {
             </header>
             <div className="body">
               <h3>No Bad Passwords</h3>
-              <p>Password strength indicator and validator. It uses DropBox's zxcvbn package to evaluate the strength of the user's password in a registration form. Poor scoring passwords do not make it through the validation and cannot be submitted.
+              <p>Have your password scored while you register. Bad passwords do not make it through the validation and cannot be submitted.
               </p>
             </div>
             <div className="project-footer">
               <ul className="tech-list">
-                <li>React</li>
-                <li>TypeScript</li>
-                <li>CSS</li>
-                <li>zxcvbn</li>
+              <li>{'{'}TypeScript{'}'} {'{'}React{'}'} {'{'}zxcvbn{'}'} {'{'}CSS{'}'}</li>
               </ul>
             </div>
           </div>
@@ -109,9 +99,7 @@ export function Projects() {
             </div>
             <div className="project-footer">
               <ul className="tech-list">
-                <li>React</li>
-                <li>React Router</li>
-                <li>CSS</li>
+              <li>{'{'}ReactJS{'}'} {'{'}React Router{'}'} {'{'}CSS{'}'}</li>
               </ul>
             </div>
           </div>
@@ -131,15 +119,12 @@ export function Projects() {
             </header>
             <div className="body">
               <h3>Robofriends</h3>
-              <p>Search through a list of cool robots to find your friends.
+              <p>Search through a list of cool robots to find your friends on this ReactJS Progressive Web App.
               </p>
             </div>
             <div className="project-footer">
               <ul className="tech-list">
-                <li>React</li>
-                <li>Redux</li>
-                <li>Progressive Web App</li>
-                <li>In-App Search</li>
+              <li>{'{'}ReactJS{'}'} {'{'}Redux{'}'} {'{'}In-App Search{'}'} {'{'}Netlify{'}'} {'{'}PWA{'}'}</li>
               </ul>
             </div>
           </div>
@@ -164,9 +149,7 @@ export function Projects() {
             </div>
             <div className="project-footer">
               <ul className="tech-list">
-                <li>Bash Scripting</li>
-                <li>Oracle Cloud</li>
-                <li>ReactJS</li>
+              <li>{'{'}Bash Scripting{'}'} {'{'}Oracle Cloud{'}'} {'{'}Linux{'}'} {'{'}React{'}'}</li>
               </ul>
             </div>
           </div>
@@ -186,15 +169,12 @@ export function Projects() {
             </header>
             <div className="body">
               <h3>Infrastructure Architect's Delight</h3>
-              <p>A display of cloud high availability system architecture. Uses resilient Kubernetes clustering, a scalable MySQL DB, and web traffic load balancing algorithms. 
+              <p>High availability cloud architecture. Uses resilient Kubernetes clustering, a scalable MySQL DB, load balancing algorithms. 
               </p>
             </div>
             <div className="project-footer">
               <ul className="tech-list">
-                <li>Kubernetes</li>
-                <li>Java / Spring Boot</li>
-                <li>MySQL</li>
-                <li>Load Balancing</li>
+              <li>{'{'}Kubernetes{'}'} {'{'}Java{'}'} {'{'}MySQL{'}'} {'{'}Load Balancer{'}'} {'{'}OCI{'}'}</li>
               </ul>
             </div>
           </div>
@@ -219,11 +199,32 @@ export function Projects() {
             </div>
             <div className="project-footer">
               <ul className="tech-list">
-                <li>Oracle</li>
-                <li>React</li>
-                <li>Java / Heliodon</li>
-                <li>Kubernetes</li>
-                <li>Object Storage</li>
+              <li>{'{'}Oracle{'}'} {'{'}React{'}'} {'{'}Java{'}'} {'{'}Kubernetes{'}'} {'{'}Oject Storage{'}'}</li>
+              </ul>
+            </div>
+          </div>
+        </AnimationOnScroll>
+        <AnimationOnScroll animateIn="animate__flipInX">
+          <div className="project">
+            <header>
+            <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
+            <div className="project-links">
+              <a href="https://github.com/bennyp11" target="_blank" rel="noreferrer">
+                <img src={githubIcon} alt="visit my site" />
+              </a>
+              <a href="https://bennyp.tech" target="_blank" rel="noreferrer">
+                <img src={externalLinkIcon} alt="visit my site" />
+              </a>
+            </div>
+            </header>
+            <div className="body">
+              <h3>Random JS Front Ends</h3>
+              <p>A Web Boom Box for up and coming DJs. A simple calculator. The first website I ever coded. 
+              </p>
+            </div>
+            <div className="project-footer">
+              <ul className="tech-list">
+              <li>{'{'}JavaScript{'}'} {'{'}CSS{'}'} {'{'}HTML{'}'} {'{'}Static Hosting{'}'} {'{'}AWS{'}'}</li>
               </ul>
             </div>
           </div>

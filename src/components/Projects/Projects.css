@@ -46,6 +46,10 @@ header{
       justify-content: space-between;
       color: #ff16ce;
 }
+
+.body{
+    margin-left: 2vw;
+}
 .project-links{
         display: flex;
         align-items: center;
@@ -82,8 +86,65 @@ header{
     }
       .tech-list{
         display: flex;
-        align-items: center;
+        text-align: center;
         gap: 2rem;
         font-size: 1.4vh;
         opacity: 0.6;
+        overflow: hidden;
+          white-space: nowrap;
       }
+
+  
+
+    @media (max-width: 1628px){
+        .project {
+       padding-right: .5vw;
+       padding-left: .5vw;
+      }
+    }
+
+    @media (max-width: 1200px){
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+        .project {
+            width: 37vw;
+            padding-right: .5vw;
+            padding-left: .5vw;
+           }
+
+    }
+
+    @media (max-width: 900px){
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+        }
+
+        .project {
+            padding-right: .5vw;
+            padding-left: .5vw;
+            width: 37vw;
+           }
+
+    }
+
+    @media (max-width: 700px){
+        .projects {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+        }
+
+        .project {
+            padding-right: .5vw;
+            padding-left: .5vw;
+            width: 70vw;
+            margin: auto;
+            margin-top: 5vh;
+           }
+
+    }

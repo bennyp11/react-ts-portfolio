@@ -1,4 +1,5 @@
 import React from 'react';
+import { AnimationOnScroll } from 'react-animation-on-scroll';
 import './Form.css';
 
 export default class extends React.Component {
@@ -13,10 +14,16 @@ export default class extends React.Component {
 
   render() {
 	return (
-  	<form className="form-container" id="contactme">
-    	<h1 className="rainbow_text_animated">Let's get in touch!</h1>
+  	<form id="contactme">
+	<AnimationOnScroll animateIn="animate__fadeIn">
+	<div className="project-header">
+	<h3>Let's work together.</h3>
+	</div>
+	</AnimationOnScroll>
+	<div className="form-container">
+    	<h1 className="rainbow_text_animated">Leave me a note!</h1>
         <div className="email">
-		<label>Email</label>
+		<label>Your Email</label>
       	<textarea
         	id="email"
         	name="email"
@@ -27,7 +34,7 @@ export default class extends React.Component {
       	/>
     	</div>
         <div className="job">
-		<label>Job Title</label>
+		<label>Your Job Title</label>
       	<textarea
         	id="job"
         	name="job"
@@ -49,6 +56,7 @@ export default class extends React.Component {
       	/>
     	</div>
     	<input type="button" value="Send this message to Ben" className="btn btn--submit" onClick={this.handleSubmit} />
+	</div>
   	</form>
 	)
   }
