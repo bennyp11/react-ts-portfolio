@@ -3,7 +3,6 @@
     flex-direction: column;
     text-align: right;
     width: 900px;
-    margin-right: 20px;
 }
 
 label {
@@ -45,8 +44,8 @@ button:hover {
 .header-container {
     position: fixed;
     top: 0;
-    margin: auto;
     width: 100vw;
+    margin: none;
     display: flex;
     flex-direction: row;
     background-color: rgb(255, 255, 255, .4);
@@ -125,11 +124,9 @@ button:hover {
 
     .link-container {
         margin-top: 3vh;
-        margin-right: 100px;
     }
 
     button {
-        margin-right: 80px;
     }
 
     .stylized-benny {

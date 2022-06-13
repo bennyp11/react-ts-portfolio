@@ -1,6 +1,9 @@
 import React from 'react';
 import { AnimationOnScroll } from 'react-animation-on-scroll';
+import mixpanel from 'mixpanel-browser';
 import './Form.css';
+
+mixpanel.init('fe861a6c319cb81c90d980c76121b1f6', {debug: true, ignore_dnt: true}, 'bennypdesign');
 
 export default class extends React.Component {
   constructor(props) {
@@ -14,7 +17,7 @@ export default class extends React.Component {
 
   render() {
 	return (
-  	<form id="contactme">
+  	<form id="contact">
 	<AnimationOnScroll animateIn="animate__fadeIn">
 	<div className="form-header">
 	<h3>Let's work together.</h3>
@@ -77,6 +80,10 @@ Could you email me your availability for this week?"
 
   handleSubmit (event) {
     const templateId = process.env.REACT_APP_API_KEY;
+	mixpanel.bennypdesign.track('contact-form-submit-click', {
+		'source': "bennyp.design",
+		'Opted out of email': false
+	  });
 
 	this.sendFeedback(templateId, {message: this.state.feedback, from_name: this.state.job, reply_to: this.state.email})
   }

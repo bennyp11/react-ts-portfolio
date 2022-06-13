@@ -1,8 +1,12 @@
 import { AnimationOnScroll } from 'react-animation-on-scroll';
 import githubIcon  from "../../assets/github-icon.svg";
 import externalLinkIcon from "../../assets/external-link-icon.svg";
+import mixpanel from "mixpanel-browser";
 import "animate.css/animate.min.css";
 import './Projects.css';
+
+mixpanel.init('fe861a6c319cb81c90d980c76121b1f6', {debug: true, ignore_dnt: true}, 'bennypdesign');
+
 
 export function Projects() {
     return (
@@ -18,8 +22,21 @@ export function Projects() {
           <header>
           <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
           <div className="project-links">
-            <a href="https://github.com/bennyp11/smartbrain-frontend" target="_blank" rel="noreferrer">
-              <img src={githubIcon} alt="GitHub" />
+            <a href="https://github.com/bennyp11/smartbrain-v2-front-end" target="_blank" rel="noreferrer">
+              <img src={githubIcon} alt="GitHub" onClick={() => {
+              mixpanel.bennypdesign.track('github-visited', {
+              'source': "bennyp.design",
+              'Opted out of email': false
+            });
+          }} />
+            </a>
+            <a href="https://effortless-kitsune-f7701e.netlify.app/" target="_blank" rel="noreferrer">
+                <img src={externalLinkIcon} alt="visit my site" onClick={() => {
+              mixpanel.bennypdesign.track('smartbrain-site-visited', {
+              'source': "bennyp.design",
+              'Opted out of email': false
+            });
+          }}/>
             </a>
           </div>
           </header>
@@ -41,10 +58,20 @@ export function Projects() {
             <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
             <div className="project-links">
               <a href="https://github.com/bennyp11/sendmo-vanilla" target="_blank" rel="noreferrer">
-                <img src={githubIcon} alt="GitHub" />
+                <img src={githubIcon} alt="GitHub" onClick={() => {
+              mixpanel.bennypdesign.track('github-visited', {
+              'source': "bennyp.design",
+              'Opted out of email': false
+            });
+          }} />
               </a>
-              <a href="https://129.146.97.110:3000/" target="_blank" rel="noreferrer">
-                <img src={externalLinkIcon} alt="visit my site" />
+              <a href="https://www.sendmo.app/" target="_blank" rel="noreferrer">
+                <img src={externalLinkIcon} alt="visit my site" onClick={() => {
+              mixpanel.bennypdesign.track('sendmo-site-visited', {
+              'source': "bennyp.design",
+              'Opted out of email': false
+            });
+          }}/>
               </a>
             </div>
             </header>
@@ -55,7 +82,7 @@ export function Projects() {
             </div>
             <div className="project-footer">
               <ul className="tech-list">
-              <li>{'{'}JavaScript{'}'} {'{'}JQuery{'}'} {'{'}CSS{'}'} {'{'}gCloud{'}'} {'{'}Payments{'}'}</li>
+              <li>{'{'}JavaScript{'}'} {'{'}JQuery{'}'} {'{'}CSS{'}'} {'{'}Netlify{'}'} {'{'}Payments{'}'}</li>
               </ul>
             </div>
           </div>
@@ -66,7 +93,20 @@ export function Projects() {
             <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
             <div className="project-links">
               <a href="" target="_blank" rel="noreferrer">
-                <img src={externalLinkIcon} alt="visit my site" />
+                <img src={githubIcon} alt="GitHub" onClick={() => {
+                mixpanel.bennypdesign.track('github-visited', {
+                'source': "bennyp.design",
+                'Opted out of email': false
+              });
+            }} />
+              </a>
+              <a href="https://bennyp11.github.io" target="_blank" rel="noreferrer">
+                <img src={externalLinkIcon} alt="visit my site" onClick={() => {
+                mixpanel.bennypdesign.track('nobadpasswords-site-visited', {
+                'source': "bennyp.design",
+                'Opted out of email': false
+              });
+            }}/>
               </a>
             </div>
             </header>
@@ -77,7 +117,7 @@ export function Projects() {
             </div>
             <div className="project-footer">
               <ul className="tech-list">
-              <li>{'{'}TypeScript{'}'} {'{'}React{'}'} {'{'}zxcvbn{'}'} {'{'}CSS{'}'}</li>
+              <li>{'{'}TypeScript{'}'} {'{'}React{'}'} {'{'}zxcvbn{'}'} {'{'}CSS{'}'} {'{'}github pages{'}'}</li>
               </ul>
             </div>
           </div>
@@ -88,7 +128,12 @@ export function Projects() {
             <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
             <div className="project-links">
               <a href="https://github.com/bennyp11/react-custom-portfolio" target="_blank" rel="noreferrer">
-                <img src={externalLinkIcon} alt="visit my site" />
+              <img src={githubIcon} alt="GitHub" onClick={() => {
+              mixpanel.bennypdesign.track('github-visited', {
+              'source': "bennyp.design",
+              'Opted out of email': false
+            });
+          }} />
               </a>
             </div>
             </header>
@@ -110,10 +155,12 @@ export function Projects() {
             <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
             <div className="project-links">
               <a href="https://github.com/bennyp11/robofriends-pwa" target="_blank" rel="noreferrer">
-                <img src={githubIcon} alt="visit my site" />
-              </a>
-              <a href="https://github.com/bennyp11/robofriends-pwa" target="_blank" rel="noreferrer">
-                <img src={externalLinkIcon} alt="visit my site" />
+              <img src={githubIcon} alt="GitHub" onClick={() => {
+              mixpanel.bennypdesign.track('github-visited', {
+              'source': "bennyp.design",
+              'Opted out of email': false
+            });
+          }} />
               </a>
             </div>
             </header>
@@ -135,10 +182,12 @@ export function Projects() {
             <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
             <div className="project-links">
               <a href="https://github.com/bennyp11/" target="_blank" rel="noreferrer">
-                <img src={githubIcon} alt="visit my site" />
-              </a>
-              <a href="https://bennyp11.github.io/" target="_blank" rel="noreferrer">
-                <img src={externalLinkIcon} alt="visit my site" />
+              <img src={githubIcon} alt="GitHub" onClick={() => {
+              mixpanel.bennypdesign.track('github-visited', {
+              'source': "bennyp.design",
+              'Opted out of email': false
+            });
+          }} />
               </a>
             </div>
             </header>
@@ -160,7 +209,12 @@ export function Projects() {
             <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
             <div className="project-links">
               <a href="https://github.com/bennyp11" target="_blank" rel="noreferrer">
-                <img src={githubIcon} alt="visit my site" />
+              <img src={githubIcon} alt="GitHub" onClick={() => {
+              mixpanel.bennypdesign.track('github-visited', {
+              'source': "bennyp.design",
+              'Opted out of email': false
+            });
+          }} />
               </a>
               <a href="https://bennyp.tech" target="_blank" rel="noreferrer">
                 <img src={externalLinkIcon} alt="visit my site" />
@@ -210,7 +264,12 @@ export function Projects() {
             <svg width="50" xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" ><title>Folder</title><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"></path></svg>
             <div className="project-links">
               <a href="https://github.com/bennyp11" target="_blank" rel="noreferrer">
-                <img src={githubIcon} alt="visit my site" />
+                <img src={githubIcon} alt="visit my site" onClick={() => {
+              mixpanel.bennypdesign.track('github-visited', {
+              'source': "bennyp.design",
+              'Opted out of email': false
+            });
+          }}/>
               </a>
               <a href="https://bennyp.tech" target="_blank" rel="noreferrer">
                 <img src={externalLinkIcon} alt="visit my site" />

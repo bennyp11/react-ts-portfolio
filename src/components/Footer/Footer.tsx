@@ -8,7 +8,7 @@ export default function Footer() {
     return(
         <div className="footer-container">
         <Router>
-        <HashLink smooth to="#home" className="logo">
+        <HashLink smooth to="#" className="logo">
         <div className="bottom-logo-container">
             <span className="stylized-benny">Benny</span>
             <span className="stylized-p">P</span>
