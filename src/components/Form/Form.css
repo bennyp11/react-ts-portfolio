@@ -6,7 +6,7 @@
     margin: auto;
     padding-bottom: 10vh;
     background: rgba(255,255,255,0.3);
-    width: 30vw;
+    width: 800px;
     height: 63vh;
     border-radius: 8px;
     margin-top: 20vh;
@@ -24,7 +24,7 @@
     margin-top: 20vh;
     margin-bottom: 20vh;
     background-size: 100% 100%;
-    font-size: 8em;
+    font-size: 72px;
     margin-bottom: 0;
 }
 .email {
@@ -49,7 +49,7 @@ label {
 
 textarea {
     height: 22px;
-    width: 300px;
+    width: 600px;
 }
 
 .feedback textarea {
@@ -58,6 +58,9 @@ textarea {
 
 h1 {
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 input {
@@ -90,17 +93,20 @@ input {
     }
 }
 
-@media (max-width: 1800px){
-    .form-container {
-        width: 400px;
-    }
-}
 
 @media (max-width: 1000px){
     .form-header {
-        font-size: 6em;
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 3em;
+    }
+
+    textarea {
+        width: 80vw;
+    }
+
+    .form-container {
+        width: 90vw;
     }
 }

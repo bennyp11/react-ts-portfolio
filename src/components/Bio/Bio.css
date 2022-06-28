@@ -24,6 +24,11 @@ img#oracle {
     height: 100px;
 }
 
+img#portrait {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
 
 
   .hard-skills{
@@ -43,6 +48,7 @@ img#oracle {
      height: 600px;
      filter: grayscale(1);
      transition: filter 0.5s;
+     margin: auto;
 }
 .about-image img:hover{
        filter: grayscale(0);
@@ -57,6 +63,7 @@ img#oracle {
   #bio {
     color: white;
      gap: 2rem;
+      font-size: .9em;
   }
 
   .about-image img{

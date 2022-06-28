@@ -53,9 +53,12 @@ export default class extends React.Component {
         	id="feedback"
         	name="feedback"
         	onChange={this.handleFeedbackChange}
-        	placeholder="Ben,
-Your portfolio is sweet. I'd like to discuss a business opportunity with you!
-Could you email me your availability for this week?"
+        	placeholder="Ben, 
+~
+Your portfolio is sweet! I'd like to discuss a business opportunity with you! &#10;
+Could you email me your availability for this week?
+~ 
+Sincerely,"
         	required
         	value={this.state.feedback}
       	/>

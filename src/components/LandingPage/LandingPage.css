@@ -2,16 +2,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20vh;
+    margin-top: 10vh;
+    margin-bottom: 12vh;
 }
 
 #home {
     margin-top: 0;
 }
 
-@media (max-width: 400px) {
-    img {
-        margin-top: 6vh;
-        width: 100vw;
+.landing-logo img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+}
+
+
+@media (max-width: 900px){
+    img#landing-logo {
+        margin-top: 15vh;
+        width: 80vw;
     }
 }
+

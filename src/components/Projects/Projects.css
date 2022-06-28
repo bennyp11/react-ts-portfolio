@@ -1,14 +1,14 @@
 .projects {
-    margin-top: 20vh;
     margin-bottom: 30vh;
-    margin-right: 4vw;
-    margin-left: 4vw;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    padding: 1rem;
     overflow: hidden;
     margin-bottom: 20vh;
+    width: 90%;
+    margin: auto;
+    margin-top: 20vh;
+
 }
 
 .project-header{
@@ -19,15 +19,15 @@
     color: white;
     text-align: center;
     background: black;
-    margin-top: 30vh;
+    margin-top: 20vh;
     margin-bottom: 30vh;
     background-size: 100% 100%;
-    font-size: 8em;
+    font-size: 72px;
     margin-bottom: 0;
 }
 
 .project{
-    padding: 2rem 1.8rem;
+    padding: 1.5rem 1.5rem;
     background: rgba(255,255,255,0.3);
     border-radius: 1.2rem;
     transition: 0.25s;
@@ -47,7 +47,8 @@
 
 header{
       display: flex;
-      align-items: center;
+      align-items: right;
+      width: 100%;
       justify-content: space-between;
       color: #ff16ce;
 }
@@ -57,7 +58,8 @@ header{
 }
 .project-links{
         display: flex;
-        align-items: center;
+        justify-content: right;
+        align-items: right;
         gap: 1rem;
       }
 
@@ -78,6 +80,7 @@ header{
 
     .project img {
         margin-top: 0;
+        margin-right: 4px;
     }
 
     a{
@@ -91,8 +94,12 @@ header{
       
 
     .project-footer{
-      margin-top: auto;
+      display: flex;
+      align-items: left;
+      justify-content: left;
+      margin: auto;
     }
+
       .tech-list{
         display: flex;
         text-align: center;
@@ -103,12 +110,23 @@ header{
           white-space: nowrap;
       }
 
+      ul {
+        list-style: none;
+        align-items: center;
+        margin-left: 8px;
+      }
+
   
 
     @media (max-width: 1628px){
         .project {
+          font-size: 1em;
        padding-right: .5vw;
        padding-left: .5vw;
+      }
+
+      ul {
+        padding-left: .5vw;
       }
     }
 
@@ -119,29 +137,19 @@ header{
             grid-template-rows: auto;
         }
         .project {
+          font-size: 1em;
+
             width: 37vw;
             padding-right: .5vw;
             padding-left: .5vw;
            }
+           ul {
+            padding-left: .5vw;
+          }
 
     }
 
     @media (max-width: 900px){
-        .projects {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto;
-        }
-
-        .project {
-            padding-right: .5vw;
-            padding-left: .5vw;
-            width: 37vw;
-           }
-
-    }
-
-    @media (max-width: 700px){
         .projects {
             display: grid;
             grid-template-columns: 1fr;
@@ -149,21 +157,28 @@ header{
         }
 
         .project {
+          margin: auto;
+          padding: auto;
+          font-size: 1em;
+          justify-content: center;
+          align-items: center;
             padding-right: .5vw;
             padding-left: .5vw;
-            width: 80vw;
-            margin: auto;
             margin-top: 5vh;
+            width: 95%;
            }
+           ul {
+            padding-left: .5vw;
+          }
 
     }
 
-    @media (max-width: 1000px){
-        .project-header {
-            font-size: 7em;
-            height: 250px;
-            margin-top: 40vh;
-            margin-bottom: 40vh;
-        }
-    
-    }
+   
+@media (max-width: 1000px){
+  .project-header {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 3em;
+  }
+}

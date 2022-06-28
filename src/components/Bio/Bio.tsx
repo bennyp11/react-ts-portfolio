@@ -96,7 +96,7 @@ function Bio() {
       </div>
     <div className="about-image">
         <AnimationOnScroll animateIn="animate__fadeInRight" delay={0.6 * 1000}>
-          <img src={portrait} alt="portrait" />
+          <img src={portrait} alt="portrait" id="portrait" />
         </AnimationOnScroll>
     </div>
     </div>

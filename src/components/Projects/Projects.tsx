@@ -139,7 +139,7 @@ export function Projects() {
             </header>
             <div className="body">
               <h3>Custom ReactJS Portfolio</h3>
-              <p>Software portfolio showcasing React skills
+              <p>Software portfolio showcasing React skills, including routing, html, css, and js.
               </p>
             </div>
             <div className="project-footer">
@@ -222,8 +222,8 @@ export function Projects() {
             </div>
             </header>
             <div className="body">
-              <h3>Infrastructure Architect's Delight</h3>
-              <p>High availability cloud architecture. Uses resilient Kubernetes clustering, a scalable MySQL DB, load balancing algorithms. 
+              <h3>Infra Architect's Delight</h3>
+              <p>High availability cloud app. Kubernetes clustering, a scalable MySQL DB, load balancing algorithms. 
               </p>
             </div>
             <div className="project-footer">

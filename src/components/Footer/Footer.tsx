@@ -16,7 +16,7 @@ export default function Footer() {
         </HashLink>
 
         <div className="kicker-container">
-            <p>Made with ❤️ in <img src={reactIcon} id="react" alt="React" /> by Benjamin Pollock</p>
+            <p>Made with ❤️ in <img src={reactIcon} id="react" alt="React" /></p>
         </div>
 
         <div>
