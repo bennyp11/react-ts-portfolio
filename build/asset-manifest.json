@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4cc41c56.css",
+    "main.js": "/static/js/main.57ed22df.js",
+    "static/js/937.778bf528.chunk.js": "/static/js/937.778bf528.chunk.js",
+    "static/js/787.705ea049.chunk.js": "/static/js/787.705ea049.chunk.js",
+    "static/media/bennyp-logo.gif": "/static/media/bennyp-logo.d123c8da195190713256.gif",
+    "static/media/portrait.jpg": "/static/media/portrait.a5bb1f4833bc1e1ec1ab.jpg",
+    "static/media/github.png": "/static/media/github.a855c3975c028d8069f5.png",
+    "static/media/pg-icon.svg": "/static/media/pg-icon.0d443bb4ae6a4d346f85fba623887c18.svg",
+    "static/media/node-icon.svg": "/static/media/node-icon.cc3d45a160579a330a5c17cc2c8f1407.svg",
+    "static/media/typescript-icon.svg": "/static/media/typescript-icon.f3bc0fd998dea6b1266965436af97a49.svg",
+    "static/media/react-icon.svg": "/static/media/react-icon.a010f287ea79ad0673b610a223faa951.svg",
+    "static/media/oracle-icon.svg": "/static/media/oracle-icon.438fbe17de22c6c5537976c5c5aab807.svg",
+    "index.html": "/index.html",
+    "static/media/gcloud-icon.svg": "/static/media/gcloud-icon.dd8fa784860da51ee0d7ddceb8850919.svg",
+    "static/media/html-icon.svg": "/static/media/html-icon.185baee7db74b83bf22eec6a6def7644.svg",
+    "static/media/css-icon.svg": "/static/media/css-icon.212d777ae2db63edb235490d487dc292.svg",
+    "static/media/js-icon.svg": "/static/media/js-icon.2d25723e91c8a9e057ae447ae6a73ecb.svg",
+    "static/media/github-icon.svg": "/static/media/github-icon.c48bfb2a53c47ee345a50672e3d24e07.svg",
+    "static/media/external-link-icon.svg": "/static/media/external-link-icon.97075d22dfb22a8c8d253b264e892b5f.svg",
+    "main.4cc41c56.css.map": "/static/css/main.4cc41c56.css.map",
+    "main.57ed22df.js.map": "/static/js/main.57ed22df.js.map",
+    "937.778bf528.chunk.js.map": "/static/js/937.778bf528.chunk.js.map",
+    "787.705ea049.chunk.js.map": "/static/js/787.705ea049.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4cc41c56.css",
+    "static/js/main.57ed22df.js"
+  ]
+}
